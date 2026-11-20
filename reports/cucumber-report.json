@@ -1,0 +1,196 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "end-to-end-shopping-functionality;verify-end-to-end-orders-placed-successful",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Verify End to End Orders placed successful",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1235309900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "User navigates to the login page",
+            "match": {
+              "location": "features\\step-definitions\\AddShopping.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3035710100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User enters valid username and password",
+            "match": {
+              "location": "features\\step-definitions\\AddShopping.steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 313875399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User clicks on Login button",
+            "match": {
+              "location": "features\\step-definitions\\AddShopping.steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117256000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User should be redirected to dashboard",
+            "match": {
+              "location": "features\\step-definitions\\AddShopping.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 847683700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks on Product &  Add To button",
+            "match": {
+              "location": "features\\step-definitions\\AddShopping.steps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1648592199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User Click on Checkout",
+            "match": {
+              "location": "features\\step-definitions\\AddShopping.steps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 205761300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User Payment Getway Verify Email ID",
+            "match": {
+              "location": "features\\step-definitions\\AddShopping.steps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6076300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User Payment Getway Select Address",
+            "match": {
+              "location": "features\\step-definitions\\AddShopping.steps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 551935100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Click on Place Orders",
+            "match": {
+              "location": "features\\step-definitions\\AddShopping.steps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40496900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User should be Orders successful Thank You Visiting",
+            "match": {
+              "location": "features\\step-definitions\\AddShopping.steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 139454399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Order ID Reverify to Order History Page",
+            "match": {
+              "location": "features\\step-definitions\\AddShopping.steps.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 341980100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Bill Address verify Orders Summary Page.",
+            "match": {
+              "location": "features\\step-definitions\\AddShopping.steps.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16182899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 57048699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "end-to-end-shopping-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "End to End Shopping Functionality",
+    "tags": [],
+    "uri": "features\\AddShopping.feature"
+  }
+]
