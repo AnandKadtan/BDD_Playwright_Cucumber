@@ -22,11 +22,12 @@ class AddShoppingPage {
         this.OrderRow =  page.locator(".ng-star-inserted [scope='row']");
         this.viewOrder = page.locator("button[class='btn btn-primary']");
         this.orderDetailsID = page.locator('.col-text.-main');
-        this.BillAddress = page.locator('div.content-title').first()
-        this.OrderSummaryEmailId = page.locator('div.content-title,p.text').nth(1)
-        this.OrderSummaryCountry = page.locator('div.content-title,p.text').nth(2)
-    
-
+        this.BillAddress = page.locator('div.content-title').first();
+        this.OrderSummaryEmailId = page.locator('div.content-title,p.text').nth(1);
+        this.OrderSummaryCountry = page.locator('div.content-title,p.text').nth(2);
+        this.OrderMenu = page.locator("button[routerlink='/dashboard/myorders']");
+        this.DeleteOrders = page.getByRole("button",{name:'Delete'});
+        this.OrderSuccessfullyDelete = page.getByRole('alert', { name: 'Orders Deleted Successfully' });
     }
 
     async navigateToLoginPage() {
@@ -106,7 +107,7 @@ class AddShoppingPage {
  }
 async OrderHistoryclick(){
 
-    this.orderid  = await this.orderID.textContent()
+    this.orderid  = await this.orderID.innerText()
     console.log(this.orderid)
   await this.orderHistory.click()
   
@@ -135,5 +136,30 @@ const CountryName = ordersummarycountry.split("-")[1]
 await expect(CountryName).toContain("India")
 
 }
+
+async Click_On_Orders(){
+
+await this.OrderMenu.click()
+
 }
+
+async Generate_Order_is_Deleted(){
+await this.OrderRow.last().waitFor(); 
+const orderNo = this.orderid.trim();
+ const Order_Count = await this.OrderRow.count()
+ for(let j = 0 ; j < Order_Count; j++){
+ const OrderNoRow =  await this.OrderRow.nth(j).textContent()
+ if(orderNo.includes(OrderNoRow)){
+   await this.DeleteOrders.nth(j).click()
+   break;
+ }
+ }
+ const DeleteToastMessage = await this.OrderSuccessfullyDelete.textContent()
+ console.log(DeleteToastMessage)
+ //await expect(await this.OrderSuccessfullyDelete).toBeVisible()
+
+}
+
+}
+
 module.exports = AddShoppingPage;

@@ -11,5 +11,6 @@ Feature: End to End Shopping Functionality
     And Click on Place Orders 
     And User should be Orders successful Thank You Visiting
     And Order ID Reverify to Order History Page
-    Then Bill Address verify Orders Summary Page.
+    And Bill Address verify Orders Summary Page.
+    Then Placed Orders Should Deleted
     

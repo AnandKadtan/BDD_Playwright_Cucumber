@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1235309900
+              "duration": 1808268100
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3035710100
+              "duration": 2143355399
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 313875399
+              "duration": 226800500
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 117256000
+              "duration": 118686200
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 847683700
+              "duration": 874406099
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1648592199
+              "duration": 1649753899
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 205761300
+              "duration": 313909700
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6076300
+              "duration": 14585500
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 551935100
+              "duration": 610885800
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 40496900
+              "duration": 59832500
             }
           },
           {
@@ -144,7 +144,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 139454399
+              "duration": 285497799
             }
           },
           {
@@ -157,12 +157,12 @@
             },
             "result": {
               "status": "passed",
-              "duration": 341980100
+              "duration": 436671899
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 14,
             "name": "Bill Address verify Orders Summary Page.",
             "match": {
@@ -170,7 +170,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16182899
+              "duration": 19854600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Placed Orders Should Deleted",
+            "match": {
+              "location": "features\\step-definitions\\AddShopping.steps.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5885659200
             }
           },
           {
@@ -178,7 +191,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 57048699
+              "duration": 980978600
             }
           }
         ],

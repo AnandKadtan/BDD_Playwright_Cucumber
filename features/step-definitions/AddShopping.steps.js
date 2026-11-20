@@ -55,8 +55,13 @@ When('Order ID Reverify to Order History Page', async function() {
     await this.addshoppingpage.OrderHistoryclick()
     await this.addshoppingpage.Order_History_Page_Verify_OrderID()
 } );
-Then('Bill Address verify Orders Summary Page.',async function(){
+When('Bill Address verify Orders Summary Page.',async function(){
 
   await this.addshoppingpage.Bill_Address_Reverify()
 
+});
+Then('Placed Orders Should Deleted',async function() {
+    await this.addshoppingpage.Click_On_Orders()
+    await this.page.pause()
+    await this.addshoppingpage.Generate_Order_is_Deleted()
 });
